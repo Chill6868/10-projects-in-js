@@ -238,7 +238,6 @@
   color: red;
 }
 .input__error-text {
-  height: 0;
   opacity: 0;
   visibility: hidden;
   color: red;
@@ -248,12 +247,10 @@
 }
 @keyframes fadeOut {
   from {
-    height: 1em;
     opacity: 1;
     visibility: visible;
   }
   to {
-    height: 0;
     opacity: 0;
     visibility: hidden;
   }
@@ -263,12 +260,10 @@
 }
 @keyframes fadeIn {
   from {
-    height: 0;
     opacity: 0;
     visibility: hidden;
   }
   to {
-    height: 1em;
     opacity: 1;
     visibility: visible;
   }
@@ -673,24 +668,20 @@ section {
   padding: 3rem;
 }
 .billsplitter__output-text {
-  height: 0;
   opacity: 0;
   visibility: hidden;
   white-space: balance;
   text-align: center;
-  animation: fadeOut 0.3s forwards, removeMarginTop 0.3s forwards;
 }
 .billsplitter__output-text--hide-animation {
   animation: fadeOut 0.3s forwards;
 }
 @keyframes fadeOut {
   from {
-    height: 1em;
     opacity: 1;
     visibility: visible;
   }
   to {
-    height: 0;
     opacity: 0;
     visibility: hidden;
   }
@@ -700,15 +691,16 @@ section {
 }
 @keyframes fadeIn {
   from {
-    height: 0;
     opacity: 0;
     visibility: hidden;
   }
   to {
-    height: 1em;
     opacity: 1;
     visibility: visible;
   }
+}
+.billsplitter__output-text--hide-animation {
+  animation: fadeOut 0.3s forwards, removeMarginTop 0.3s forwards;
 }
 @keyframes removeMarginTop {
   from {

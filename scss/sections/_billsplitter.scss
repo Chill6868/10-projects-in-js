@@ -36,15 +36,17 @@
 		white-space: balance;
 		text-align: center;
 
-		animation: fadeOut 0.3s forwards, removeMarginTop 0.3s forwards;
+		&--hide-animation {
+			animation: fadeOut 0.3s forwards, removeMarginTop 0.3s forwards;
 
-		@keyframes removeMarginTop {
-			from {
-				margin-top: 3rem;
-			}
+			@keyframes removeMarginTop {
+				from {
+					margin-top: 3rem;
+				}
 
-			to {
-				margin-top: 0;
+				to {
+					margin-top: 0;
+				}
 			}
 		}
 

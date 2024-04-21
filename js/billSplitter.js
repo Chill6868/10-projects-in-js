@@ -33,6 +33,7 @@ const handleBillSplitter = () => {
 
 			input.addEventListener("input", () => {
 				inputBox.classList.remove("input__box--error");
+				inputErrorText.classList.add("input__error-text--hide-animation");
 				inputErrorText.classList.remove("input__error-text--visible");
 			});
 		});
@@ -60,8 +61,14 @@ const handleBillSplitter = () => {
 					2
 				);
 			}
+			outputText.classList.add("billsplitter__output-text--hide-animation");
 			outputText.classList.add("billsplitter__output-text--visible");
 		} else {
+			setTimeout(() => {
+				outputText.classList.remove(
+					"billsplitter__output-text--hide-animation"
+				);
+			}, 300);
 			outputText.classList.remove("billsplitter__output-text--visible");
 		}
 	});
