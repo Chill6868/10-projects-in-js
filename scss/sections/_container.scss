@@ -1,0 +1,42 @@
+@use "../abstracts/" as *;
+
+// ===========================================================================
+// Container for Projects
+// ===========================================================================
+
+.container {
+	grid-column: 3/-1;
+	grid-row: 1/-1;
+	margin: 1rem;
+	padding: 1em;
+	background-color: $color-950;
+	border-radius: $border-radius * 2;
+	// width: calc(90vw - 50rem);
+	width: calc(80vw - 2rem);
+	transition: transform 0.3s, width 0.3s;
+	// overflow: hidden;
+
+	&--nav-mini {
+		transform: translateX(-10vw);
+	}
+}
+
+@media (min-width: 576px) {
+	// .container {}
+}
+
+@media (min-width: 768px) {
+	// .container {}
+}
+
+@media (min-width: 992px) {
+	// .container {}
+}
+
+@media (min-width: 1200px) {
+	// .container {}
+}
+
+@media (min-width: 1400px) {
+	// .container {}
+}

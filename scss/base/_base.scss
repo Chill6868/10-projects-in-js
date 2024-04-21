@@ -1,0 +1,65 @@
+@use "../abstracts/" as *;
+
+// html {
+// 	scroll-padding-top: 202px;
+// }
+
+body {
+	// ===============
+	// Main Font
+	// ===============
+	font-family: "M PLUS Code Latin", monospace;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	// ===============
+	// Background Settings
+	// ===============
+	background-position: center;
+	background-size: cover;
+	// background-attachment: fixed;
+	background-color: $color-background;
+	overflow-y: hidden;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(10, 10vw);
+	grid-template-rows: 100vh;
+}
+
+.block-view {
+	display: none;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 1rem;
+	background-color: $color-950;
+	border-radius: $border-radius * 2;
+
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 1em;
+		height: 100%;
+		width: 75%;
+		text-align: center;
+	}
+
+	&--visible {
+		display: block;
+	}
+
+	svg {
+		color: rgb(150, 20, 20);
+	}
+
+	span {
+		color: $color-500;
+	}
+}

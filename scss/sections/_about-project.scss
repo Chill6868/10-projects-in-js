@@ -1,0 +1,77 @@
+@use "../abstracts/" as *;
+
+// ===========================================================================
+// About Project
+// ===========================================================================
+
+.about-project {
+	// border: 1px solid red;
+	// margin: 15em 0;
+	// height: 100vh;
+	// ================
+	// Remove that, just for overview
+	// ================
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	height: 100%;
+
+	.wrapper {
+		height: 100%;
+		// border: 1px solid red;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.text-box {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+
+		svg {
+			color: $color-500;
+		}
+	}
+
+	&__link {
+		// color: red;
+		color: $color-500;
+		text-decoration: underline;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $color-400;
+			text-decoration: none;
+		}
+	}
+
+	&__ul {
+		line-height: 1.5em;
+		letter-spacing: 0.1em;
+	}
+
+	&__ul-in-ul {
+		margin-left: 3em;
+	}
+}
+
+@media (min-width: 576px) {
+	// .about-project {}
+}
+
+@media (min-width: 768px) {
+	// .about-project {}
+}
+
+@media (min-width: 992px) {
+	// .about-project {}
+}
+
+@media (min-width: 1200px) {
+	// .about-project {}
+}
+
+@media (min-width: 1400px) {
+	// .about-project {}
+}

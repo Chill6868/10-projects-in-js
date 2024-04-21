@@ -1,0 +1,71 @@
+@use "./variables" as *;
+@use "./animations" as *;
+
+// ===========================================================================
+// Input Box
+// ===========================================================================
+
+.input {
+	&__container {
+		// border: 1px solid blue;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	&__box {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		width: 100%;
+		background-color: $color-950;
+		// border: 1px solid red;
+
+		input,
+		select {
+			width: 100%;
+			padding: 2rem 1.5rem;
+			background-color: inherit;
+			outline: none;
+			border: none;
+			border: 1px solid $color-900;
+			border-radius: $border-radius;
+			transition: border 0.3s;
+
+			&:focus {
+				border: 1px solid $color-500;
+			}
+
+			&:focus ~ label,
+			&:focus ~ select {
+				color: $color-500;
+			}
+		}
+
+		label {
+			font-size: 1.4rem;
+			padding: 0 0.5rem;
+			background-color: inherit;
+			position: absolute;
+			top: 0;
+			left: 1rem;
+			transform: translateY(-50%);
+			transition: color 0.3s;
+		}
+
+		&--error {
+			label {
+				color: red;
+			}
+		}
+	}
+
+	&__error-text {
+		@include animationFadeIn;
+		color: red;
+	}
+}

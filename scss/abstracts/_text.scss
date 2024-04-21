@@ -1,0 +1,107 @@
+@use "./variables" as *;
+
+.text {
+	&__sm {
+		font-size: 1.4rem;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+	}
+
+	&__md {
+		font-size: 1.6rem;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+	}
+
+	&__lg {
+		font-size: 1.75rem;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+	}
+
+	&__xl {
+		font-size: 3.5rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+	}
+
+	&__gradient-1 {
+		background: linear-gradient(to right, $color-500 30%, #b11e1e 100%);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+@media (min-width: 576px) {
+	.text {
+		&__sm {
+			font-size: 1.5rem;
+		}
+
+		&__md {
+			font-size: 1.8rem;
+		}
+
+		&__lg {
+			font-size: 2.5rem;
+		}
+
+		&__xl {
+			font-size: 4.25rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.text {
+		&__sm {
+			font-size: 1.6rem;
+		}
+
+		&__md {
+			font-size: 2rem;
+		}
+
+		&__lg {
+			font-size: 2.75rem;
+		}
+
+		&__xl {
+			font-size: 5rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.text {
+		// &__sm {}
+
+		// &__md {}
+
+		&__lg {
+			font-size: 3rem;
+		}
+
+		&__xl {
+			font-size: 5.5rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.text {
+		// &__sm {}
+
+		// &__md {}
+
+		// &__lg {}
+
+		&__xl {
+			font-size: 6rem;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	// .text {}
+}

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 JS Projects | Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+
+<body>
+    <main>
+        <nav class="nav-normal">
+            <div class="nav-normal__box">
+                <h1 class="nav-normal__project-title"><strong>10 Projektów w JS</strong></h1>
+                <button class="nav-normal__btn-item nav-normal__btn-toggle">
+                    <div class="nav-normal__icon-box icon-box text__sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-square-arrow-left">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 8l-4 4l4 4" />
+                            <path d="M16 12h-8" />
+                            <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                        </svg>
+                        <span>Zwiń</span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="nav-normal__box btn-box">
+                <p class="nav-normal__box-title text__md">Informacje</p>
+                <button class="about nav-normal__btn-item btn-item-active">
+                    <div class="nav-normal__icon-box icon-box text__sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M12 9h.01" />
+                            <path d="M11 12h1v4h1" />
+                        </svg>
+                        <span>O Projekcie</span>
+                    </div>
+                </button>
+                <a href="https://wiktorignasiak.com" target="_blank" class="nav-normal__btn-item btn-animation">
+                    <div class="nav-normal__icon-box icon-box text__sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-user">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
+                        <span>O mnie</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-normal__box btn-box">
+                <p class="nav-normal__box-title text__md">Projekty</p>
+                <div class="nav-normal__projects-box">
+                    <div class="nav-normal__projects-btn-box">
+                        <button class="search nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M21 21l-6 -6" />
+                                </svg>
+                                <span>Wyszukiwarka</span>
+                            </div>
+                        </button>
+
+                        <button class="bill nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                                    <path d="M3 10l18 0" />
+                                    <path d="M7 15l.01 0" />
+                                    <path d="M11 15l2 0" />
+                                </svg>
+                                <span>Billsplitter</span>
+                            </div>
+                        </button>
+                        <button class="form nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-list-check">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+                                    <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+                                    <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+                                    <path d="M11 6l9 0" />
+                                    <path d="M11 12l9 0" />
+                                    <path d="M11 18l9 0" />
+                                </svg>
+                                <span>Walidator Formularza</span>
+                            </div>
+                        </button>
+                        <button class="8ball nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-sport-billard">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M12 14m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M12 12m-8 0a8 8 0 1 0 16 0a8 8 0 1 0 -16 0" />
+                                </svg>
+                                <span>Magic 8Ball</span>
+                            </div>
+                        </button>
+                        <button class="stoper nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-alarm">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                    <path d="M12 10l0 3l2 0" />
+                                    <path d="M7 4l-2.75 2" />
+                                    <path d="M17 4l2.75 2" />
+                                </svg>
+                                <span>Stoper</span>
+                            </div>
+                        </button>
+                        <button class="mynotes nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-note">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M13 20l7 -7" />
+                                    <path
+                                        d="M13 20v-6a1 1 0 0 1 1 -1h6v-7a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7" />
+                                </svg>
+                                <span>MyNotes</span>
+                            </div>
+                        </button>
+                        <button class="exchange nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-building-bank">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M3 21l18 0" />
+                                    <path d="M3 10l18 0" />
+                                    <path d="M5 6l7 -3l7 3" />
+                                    <path d="M4 10l0 11" />
+                                    <path d="M20 10l0 11" />
+                                    <path d="M8 14l0 3" />
+                                    <path d="M12 14l0 3" />
+                                    <path d="M16 14l0 3" />
+                                </svg>
+                                <span>Exchange Rate App</span>
+                            </div>
+                        </button>
+                        <button class="wallet nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-wallet">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
+                                    <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+                                </svg>
+                                <span>Wallet</span>
+                            </div>
+                        </button>
+                        <button class="time nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-clock">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                                    <path d="M12 7v5l3 3" />
+                                </svg>
+                                <span>Czaso-odliczator</span>
+                            </div>
+                        </button>
+                        <button class="todo nav-normal__btn-item">
+                            <div class="nav-normal__icon-box icon-box text__sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-checkup-list">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                                    <path
+                                        d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                                    <path d="M9 14h.01" />
+                                    <path d="M9 17h.01" />
+                                    <path d="M12 16l1 1l3 -3" />
+                                </svg>
+                                <span>Zaawansowana ToDo Lista</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="nav-mini nav-mini--hidden">
+            <div class="nav-mini__box">
+                <button class="nav-mini__btn-item nav-mini__btn-toggle">
+                    <div class="nav-mini__icon-box icon-box text__sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-square-arrow-left">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 8l-4 4l4 4" />
+                            <path d="M16 12h-8" />
+                            <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+
+            <div class="nav-mini__box btn-box">
+                <button class="about nav-mini__btn-item btn-item-active">
+                    <div class="nav-mini__icon-box icon-box text__sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M12 9h.01" />
+                            <path d="M11 12h1v4h1" />
+                        </svg>
+                    </div>
+                </button>
+                <a href="https://wiktorignasiak.com/" target="_blank" class="nav-mini__btn-item btn-animation">
+                    <div class="nav-mini__icon-box icon-box text__sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-user">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-mini__box nav-mini__projects-box btn-box">
+                <div class="nav-mini__projects-btn-box">
+                    <button class="search nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                <path d="M21 21l-6 -6" />
+                            </svg>
+                        </div>
+                    </button>
+
+                    <button class="bill nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                                <path d="M3 10l18 0" />
+                                <path d="M7 15l.01 0" />
+                                <path d="M11 15l2 0" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="form nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-list-check">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+                                <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+                                <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+                                <path d="M11 6l9 0" />
+                                <path d="M11 12l9 0" />
+                                <path d="M11 18l9 0" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="8ball nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-sport-billard">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M12 14m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M12 12m-8 0a8 8 0 1 0 16 0a8 8 0 1 0 -16 0" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="stoper nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-alarm">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                                <path d="M12 10l0 3l2 0" />
+                                <path d="M7 4l-2.75 2" />
+                                <path d="M17 4l2.75 2" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="mynotes nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-note">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M13 20l7 -7" />
+                                <path
+                                    d="M13 20v-6a1 1 0 0 1 1 -1h6v-7a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="exchange nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-building-bank">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 21l18 0" />
+                                <path d="M3 10l18 0" />
+                                <path d="M5 6l7 -3l7 3" />
+                                <path d="M4 10l0 11" />
+                                <path d="M20 10l0 11" />
+                                <path d="M8 14l0 3" />
+                                <path d="M12 14l0 3" />
+                                <path d="M16 14l0 3" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="wallet nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-wallet">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
+                                <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="time nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                                <path d="M12 7v5l3 3" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="todo nav-mini__btn-item">
+                        <div class="nav-mini__icon-box icon-box text__sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-checkup-list">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                                <path
+                                    d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                                <path d="M9 14h.01" />
+                                <path d="M9 17h.01" />
+                                <path d="M12 16l1 1l3 -3" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal Shadow -->
+        <div class="modal__shadow"></div>
+
+        <!-- Validation Form Modal -->
+        <div class="modal__box modal-form-sended-successful">
+            <h4 class="modal-form-sended-successful__title">Formularz został pomyślnie wysłany.</h4>
+            <button class="modal__btn-close modal-form-sended-successful__btn btn">
+                <div class="btn__solid"></div>
+                <div class="btn__text">Zamknij</div>
+            </button>
+        </div>
+
+        <!-- Container Structure -->
+
+        <div class="container">
+
+        </div>
+
+        <div class="block-view">
+            <div class="wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                    <path d="M12 9h.01"></path>
+                    <path d="M11 12h1v4h1"></path>
+                </svg>
+                <h2 class="text__xl">
+                    Szerokość okna
+                </h2>
+                <h4 class="text__md">Aby strona mogła wyświetlać się normalnie, szerokość okna nie może wynosić mniej
+                    niż
+                    <span>1920px</span>.
+                </h4>
+            </div>
+        </div>
+    </main>
+
+    <!-- Icon Box (SVG Fix) -->
+    <script src="./js/iconBox.js"></script>
+
+    <!-- Button Animation on Click -->
+    <script src="./js/btnAnimation.js"></script>
+
+    <!-- Navigation -->
+    <script src="./js/navigation.js"></script>
+
+    <!-- Modals -->
+    <script src="./js/modals.js"></script>
+
+    <!-- Check Screen Width -->
+    <script src="./js/screenWidthCheck.js"></script>
+
+    <!-- Project 1 (DrinkSearch) -->
+    <script src="./js/drinkSearch.js"></script>
+
+    <!-- Project 2 (BillSplitter) -->
+    <script src="./js/billSplitter.js"></script>
+
+    <!-- Project 3 (Form Validation) -->
+    <script src="./js/formValidation.js"></script>
+
+    <!-- Project 4 (Magic 8Ball) -->
+    <script src="./js/magic8Ball.js"></script>
+
+    <!-- Project 5 (Stopper) -->
+    <script src="./js/stopper.js"></script>
+
+    <!-- Project 6 (myNotes) -->
+    <script src="./js/myNotes.js"></script>
+
+    <!-- Project 7 (Exchange Rate App) -->
+    <script src="./js/exchangeRateApp.js"></script>
+
+    <!-- Project 8 (Wallet) -->
+    <script src="./js/wallet.js"></script>
+
+    <!-- Project 9 (Timer) -->
+    <script src="./js/timer.js"></script>
+
+    <!-- Project 10 (ToDo List) -->
+    <script src="./js/toDoList.js"></script>
+
+</body>
+
+</html>

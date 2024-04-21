@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+// ===========================================================================
+// DrinkSearch
+// ===========================================================================
+
+.drink-search {
+	// border: 1px solid green;
+	height: 100%;
+
+	&__container {
+		border: 1px solid $color-900;
+		width: 50%;
+		border-radius: $border-radius;
+		overflow: hidden;
+	}
+}
